@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'me.tatarka.retrolambda'
 
-
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
@@ -16,9 +15,6 @@ android {
         jackOptions{
             enabled false
         }
-
-
-
 
     }
     compileOptions {
@@ -40,6 +36,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.jakewharton.timber:timber:4.1.2'
-    compile 'com.android.support:recyclerview-v7:24.2.1'
     testCompile 'junit:junit:4.12'
 }
