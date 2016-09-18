@@ -15,13 +15,13 @@ governing permissions and limitations under License.
  */
 package com.github.shareme.gwsfluidarch.mvp.presenter;
 
-import com.github.shareme.gwsfluidarch.mvp.View;
+import com.github.shareme.gwsfluidarch.mvp.viewmodel.MyView;
 
 /**
  * Created by fgrott on 9/17/2016.
  */
 @SuppressWarnings("unused")
-public interface Presenter<V extends View> {
+public interface Presenter<V extends MyView> {
 
   void onViewAttached(V view);
 

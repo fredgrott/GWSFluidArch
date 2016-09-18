@@ -13,11 +13,11 @@ distributed under the License is distributed on an
 either express or implied. See the License for the specific language
 governing permissions and limitations under License.
  */
-package com.github.shareme.gwsfluidarch.mvp;
+package com.github.shareme.gwsfluidarch.mvp.viewmodel;
 
 /**
  * Created by fgrott on 9/17/2016.
  */
 
-public interface View {
+public interface MyView {
 }
