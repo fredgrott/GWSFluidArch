@@ -15,7 +15,7 @@
    limitations under the License.
 
  */
-package com.github.shareme.gwsfluidarch.mvc.viewmodel;
+package com.github.shareme.gwsfluidarch.mvvm.viewmodel;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -24,11 +24,6 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.HashMap;
 
 /**
- * Create and keep this class inside your Activity. Store it
- * in {@link android.support.v4.app.FragmentActivity#onRetainCustomNonConfigurationInstance()
- * and restore in {@link android.app.Activity#onCreate(android.os.Bundle)} before
- * calling the super implemenentation.
- *
  * Created by fgrott on 9/17/2016.
  */
 @SuppressWarnings("unused")
@@ -69,7 +64,7 @@ public class ViewModelProvider {
   @SuppressWarnings("unchecked")
   @NonNull
   public synchronized <T extends MyView> ViewModelWrapper<T> getViewModel(final String modelIdentifier,
-                                                                         final @NonNull Class<? extends AbstractViewModel<T>> viewModelClass) {
+                                                                          final @NonNull Class<? extends AbstractViewModel<T>> viewModelClass) {
     AbstractViewModel<T> instance = (AbstractViewModel<T>) mViewModelCache.get(modelIdentifier);
     if (instance != null) {
       return new ViewModelWrapper<>(instance, false);
